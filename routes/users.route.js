@@ -128,7 +128,7 @@ router.post('/login', async (req, res) => {
                     name: user.firstname,
                     role: user.role
                 }, process.env.SECRET, {
-                    expiresIn: "1h",
+                    expiresIn: "10000h",
                 })
                 return res.status(200).send({
                     success: true,
